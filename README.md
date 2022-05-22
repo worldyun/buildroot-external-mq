@@ -62,7 +62,7 @@ buildroot/ $ make
 
  编译完成后，会生成一个`sdcard.img `系统镜像，镜像文件存放在 `output/images/`目录下。
 
- 执行如下命令讲镜像烧录进 tf卡即可，注意 `/dev/sdX` sdX 指的是tf卡设备的主分区。
+ 执行如下命令讲镜像烧录进 tf卡即可，注意 `/dev/sdX` sdX 指的是tf卡设备的主分区。（sda/sdb...）
 
 ```bash
 buildroot/ $ dd if=output/images/sdcard.img of=/dev/sdX bs=1M
